@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      label {
+        text-align: center;
+      }
+      table,
+      tr,
+      td {
+        text-align: center;
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: max-content;
+      }
+      table {
+        margin-top: 8%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      input,
+      #add {
+        width: 300px;
+      }
+      #declaration,
+      #kannada,
+      #english,
+      #hindi,
+      #telugu,
+      #male,
+      #female {
+        width: 15px;
+      }
+      #a {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center; color: blue">Registraction Form</h2>
+    <form>
+      <table>
+        <tr>
+          <td>
+            <label for name="name" id="name">Full Name</label>
+          </td>
+          <td>
+            <input type="text" name="name" id="name" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="user" id="user">Last Name</label>
+          </td>
+          <td>
+            <input type="text" name="user" id="user" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="email" id="email">Email</label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="pass" id="pass">Password</label>
+          </td>
+          <td>
+            <input type="password" name="pass" id="pass" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="repass" id="repass">Re Password</label>
+          </td>
+          <td>
+            <input type="password" name="repass" id="repass" required />
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <label for name="gender" id="gender">Gender </label>
+          </td>
+          <td id="a">
+            <input type="radio" id="male" name="gender" />
+            <label for id="male">Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td id="a">
+            <input type="radio" id="female" name="gender" />
+            <label for id="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="age" id="age">Age</label>
+          </td>
+          <td>
+            <input type="number" name="age" id="age" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="mobile" id="mobile">Phone Number</label>
+          </td>
+          <td>
+            <input type="tel" name="mobile" id="mobile" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="add" id="add">Address</label>
+          </td>
+          <td>
+            <textarea name="add" id="add"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="state" id="state">State</label>
+          </td>
+          <td>
+            <input type="text" name="state" id="state" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="country" id="country">Country</label>
+          </td>
+          <td id="a">
+            <select
+              name="gender"
+              id="gender"
+              aria-placeholder="Choose your country"
+            >
+              <option>Choose your country</option>
+              <option value="India">India</option>
+              <option value="USA">USA</option>
+              <option value="Russia">Russia</option>
+              <option value="South Korea">South Korea</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for name="lan" id="lan">Languages Known</label>
+          </td>
+          <td>
+            <input type="checkbox" id="english" />
+            <label for id="english">English</label>
+            <input type="checkbox" id="kannada" />
+            <label for id="kannada">Kannada</label>
+            <input type="checkbox" id="hindi" />
+            <label for id="hindi">Hindi</label>
+            <input type="checkbox" id="telugu" />
+            <label for id="telugu">Telugu</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" id="a">
+            <input type="checkbox" id="declaration" />
+            <label for id="declaration"
+              >Hereby I declare all the given details are true</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: right">
+            Log in to
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_self"
+              >Ethnus</a
+            >
+            wedsite
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <button
+      type="submit"
+      style="margin-left: auto; margin-right: auto; display: block"
+    >
+      Register
+    </button>
+  </body>
+</html>

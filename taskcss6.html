@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {
+  border: 3px solid #f1f1f1;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  width: 100%;
+}
+#cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: 50%;
+}
+#d3{
+  background-color: #f2f0f0e8;
+}
+
+#psw {
+  float: right;
+  padding-top: 16px;
+}
+</style>
+</head>
+<body>
+<form>
+  <div>
+    <img src="imaget6.png" alt="Avatar">
+  </div>
+  <div >
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox"  name="remember"> Remember me
+    </label>
+  </div>
+  <div id="d3">
+    <button type="button" id="cancelbtn">Cancel</button>
+    <span id="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</body>
+</html>

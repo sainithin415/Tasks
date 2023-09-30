@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      ol {
+        list-style-type: none;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0px;
+        padding: 4px;
+        background-color: aqua;
+        width: 180px;
+        border: 3px solid black;
+      }
+      li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+      }
+      li a:hover {
+        background-color: darkorange;
+        color: white;
+      }
+      #a {
+        display: flex;
+        list-style-type: none;
+        margin: 0px;
+        padding: 4px;
+        background-color: rgba(174, 190, 189, 0.342);
+        width: max-content;
+        border: 3px solid black;
+      }
+      #a a:hover {
+        background-color: rgb(53, 53, 52);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Task 2</h1>
+    <div style="display: flex">
+      <ol>
+        <li><h3>Vertical Navigation Bar</h3></li>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">Bootstrap</a></li>
+        </ul>
+      </ol>
+
+      <ol>
+        <li><h3>Horizontal Navigation Bar</h3></li>
+        <ul id="a">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Java</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">Bootstrap</a></li>
+        </ul>
+      </ol>
+    </div>
+  </body>
+</html>
